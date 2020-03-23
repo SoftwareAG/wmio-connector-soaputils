@@ -1,0 +1,44 @@
+{
+  "name": "SOAP Utils",
+  "description": "soaputils",
+  "triggers": [],
+  "actions": [
+    "/v1/call_soapaction"
+  ],
+  "version": 1,
+  "auth_type": "apikey",
+  "docs_link": "https://docs.webmethods.io/integration/developer_guide/connector_builder/#gsc.tab=0",
+  "lookup": true,
+  "lookup_attachments": [
+    {
+      "lookup_id": "get_soapservices",
+      "action_id": "/v1/call_soapaction",
+      "field_id": "service",
+      "dependencies": [
+        "wsdlUrl"
+      ]
+    },
+    {
+      "lookup_id": "get_soapports",
+      "action_id": "/v1/call_soapaction",
+      "field_id": "soapPort",
+      "dependencies": [
+        "wsdlUrl",
+        "service"
+      ]
+    },
+    {
+      "lookup_id": "get_soapactions",
+      "action_id": "/v1/call_soapaction",
+      "field_id": "soapAction",
+      "dependencies": [
+        "wsdlUrl",
+        "service",
+        "soapPort"
+      ]
+    }
+  ],
+  "appId": "154b5b5c-7023-49e6-af55-24a05fbe5d47",
+  "guid": "f979d807-c720-4258-be7a-56c913d3d84f",
+  "connectionUid": "soaputils_1584957816438"
+}

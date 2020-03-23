@@ -1,0 +1,10 @@
+{
+  "name": "soaputils",
+  "version": "1.0.0",
+  "description": "soaputils",
+  "dependencies": {
+    "@webmethodsio/cli-sdk": "*",
+    "request": "2.55.0",
+    "strong-soap": "^1.22.1"
+  }
+}
