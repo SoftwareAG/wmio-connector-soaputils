@@ -37,8 +37,5 @@
         "soapPort"
       ]
     }
-  ],
-  "appId": "154b5b5c-7023-49e6-af55-24a05fbe5d47",
-  "guid": "f979d807-c720-4258-be7a-56c913d3d84f",
-  "connectionUid": "soaputils_1584957816438"
+  ]
 }
